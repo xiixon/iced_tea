@@ -10,14 +10,17 @@ public class PlayerDataManager : MonoBehaviour
     void Start()
     {
         path = Path.Combine(Application.streamingAssetsPath, "player.json");
-        LoadData();
+        data = GetComponent<StatsLoader>().data;
         SaveLoginTime();
     }
 
     void OnApplicationQuit()
     {
+        #if !UNITY_EDITOR
         SaveLogoutTime();
         SaveData();
+        #endif
+
     }
 
 
@@ -29,15 +32,6 @@ public class PlayerDataManager : MonoBehaviour
     void SaveLoginTime()
     {
         data.datestamp.logged_on = (int)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-    }
-
-    void LoadData()
-    {
-        if (File.Exists(path))
-        {
-            string json = File.ReadAllText(path);
-            data = JsonUtility.FromJson<PlayerData>(json);
-        }
     }
 
     void SaveData()

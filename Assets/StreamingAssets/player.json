@@ -7,23 +7,10 @@
         "coins": 0,
         "banks": 0
     },
-    "food_inventory": [
-        {
-            "item": "water",
-            "amount": 0
-        },
-        {
-            "item": "food",
-            "amount": 0
-        }
-    ],
-    "accessory_inventory": [
-        {
-            "item_id": 0
-        }
-    ],
+    "food_inventory": [],
+    "accessory_inventory": [],
     "datestamp": {
-        "logged_off": 1769916958,
-        "logged_on": 1769916950
+        "logged_off": 1769975800,
+        "logged_on": 1769975793
     }
 }
