@@ -1,0 +1,20 @@
+{
+    "currency": {
+        "coins": 0,
+        "banks": 0
+    },
+
+    "hat": [
+        {
+            "hat_id": 0,
+            "price": 0
+        }
+    ],
+
+    "collar": [
+        {
+            "collar_id": 0,
+            "price": 0
+        }
+    ]
+}
