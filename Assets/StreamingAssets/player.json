@@ -1,0 +1,34 @@
+{
+    "status": {
+        "hunger": 100,
+        "thirst": 100
+    },
+
+    "currency": {
+        "coins": 0,
+        "banks": 0
+    },
+
+    "food_inventory": [
+        {
+            "item": "water",
+            "amount": 0
+        },
+        {
+            "item": "food",
+            "amount": 0
+        }
+    ],
+
+    "accessory_inventory": [
+        {
+            "item_id" : 0
+        }
+    ],
+
+    "datestamp": {
+        "logged_off": 0,
+        "logged_on": 0
+    }
+    
+}

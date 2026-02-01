@@ -1,8 +1,14 @@
 {
-    "currency": {
-        "coins": 0,
-        "banks": 0
-    },
+    "necessary": [
+        {
+            "item": "water",
+            "price": 0
+        },
+        {
+            "item": "food",
+            "price": 0
+        }
+    ],
 
     "hat": [
         {
